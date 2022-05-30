@@ -9,7 +9,6 @@ import persist from '@alpinejs/persist'
 import focus from '@alpinejs/focus'
 import collapse from '@alpinejs/collapse'
 import morph from '@alpinejs/morph'
-
 //plugins
 Alpine.plugin(mask)
 Alpine.plugin(intersect)
@@ -25,6 +24,7 @@ import {mobileMenu} from "@/alpine-js/store/mobile-menu";
 import {ProductGallery} from "@/alpine-js/components/product-gallery";
 import {ProductVariantSelector} from "@/alpine-js/components/product-variant-selector";
 import {TemplateSwitch} from "@/alpine-js/components/template-switch";
+import {AddressesSwitch} from "@/alpine-js/components/addresses-switch";
 
 //store
 Alpine.store('mobile-menu', mobileMenu);
@@ -33,5 +33,6 @@ Alpine.store('mobile-menu', mobileMenu);
 Alpine.data('ProductGallery', ProductGallery);
 Alpine.data('ProductVariantSelector', ProductVariantSelector);
 Alpine.data('TemplateSwitch', TemplateSwitch);
+Alpine.data('AddressesSwitch', AddressesSwitch);
 
 Alpine.start()
