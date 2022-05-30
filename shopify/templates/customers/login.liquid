@@ -1,0 +1,15 @@
+<div class="container max-w-screen-sm" x-data="TemplateSwitch('login')">
+  <div
+    x-show="active === 'login'"
+    key="login"
+  >
+    {% render 'layout-account-login' %}
+  </div>
+
+  <div
+    x-show="active === 'forgot-password'"
+    key="forgot-password"
+  >
+    {% render 'layout-account-forgot-password' %}
+  </div>
+</div>
